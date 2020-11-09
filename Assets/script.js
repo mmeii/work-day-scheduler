@@ -20,7 +20,11 @@
  * DEFINE VARIABLES
  */
 
+$(document).ready(function() {
+
 var currentDay = moment().format('dddd MMMM Do YYYY');
+var currentHour = moment().format('ha');
+// var dayplannerHour = $(value)
 
 /**
  * FUNCTIONS
@@ -34,3 +38,12 @@ $("#currentDay").text(currentDay);
 // WHEN I view the time blocks for that day
 // THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
+console.log($(this).val());
+
+function checkTime() {
+    if()
+}
+
+checkTime();
+
+});
