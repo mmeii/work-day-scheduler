@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- linking bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+
+    <!-- linking fonts -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -18,21 +22,146 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="Assets/style.css" />
+    
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
-    <header class="jumbotron">
+    <header class="jumbotron text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
 
+    <div class="container mt-5 mb-5">
+
+      <!-- Timeblocks 9AM to 5PM -->
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="9">
+          9AM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea>
+        </div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="10">
+          10AM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea>
+        </div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="11">
+          11AM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea>
+        </div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="12">
+          12PM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea>
+        </div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="1">
+          1PM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea></div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="2">
+          2PM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea></div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="3">
+          3PM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea>
+        </div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div>   
+
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="4">
+          4PM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea>
+        </div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div> 
+
+      <div class="row mt-1">
+        <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="5">
+          5PM
+        </div>
+        <div class="col-10 border px-0"><textarea></textarea>
+        </div>
+        <div class="col-1 pl-0 pr-1">
+          <button class="btn btn-block btn-info rounded-right pb-4 text-center">
+            <i class="fas fa-save pt-3"></i>
+          </button>
+        </div>
+      </div> 
+
+    </div>
+    
+
+    <!-- js scripts, jquery, moment.js, bootstrap js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="Assets/script.js"></script>
   </body>
 </html>
