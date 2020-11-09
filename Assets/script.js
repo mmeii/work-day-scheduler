@@ -20,30 +20,56 @@
  * DEFINE VARIABLES
  */
 
-$(document).ready(function() {
-
-var currentDay = moment().format('dddd MMMM Do YYYY');
-var currentHour = moment().format('ha');
-// var dayplannerHour = $(value)
+var nine = $("#9");
+var ten = $("#10");
+var eleven = $("#11");
+var twelve = $("#12");
+var one = $("#13");
+var two = $("#14");
+var three = $("#15");
+var four = $("#16");
+var five = $("#17");
+var saveBtn = $(".saveBtn");
 
 /**
  * FUNCTIONS
  */
 
-// display current day 
+// current day is displayed at the top of the calendar
+$("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
-var currentDay = moment().format('dddd MMMM Do YYYY');
-$("#currentDay").text(currentDay);
+// each time block is color-coded to indicate whether it is in the past, present, or future
+function timeBlockColor() {
+    var hour = moment().hours();
 
-// WHEN I view the time blocks for that day
-// THEN each time block is color-coded to indicate whether it is in the past, present, or future
+    $(".time-block").each(function () {
+        var currHour = parseInt($(this).attr("id"));
 
-console.log($(this).val());
+        if (currHour > hour) {
+            $(this).addClass("future")
+        } else if (currHour === hour) {
+            $(this).addClass("present");
+        } else {
+            $(this).addClass("past");
+        }
+    })
+};
 
-function checkTime() {
-    if()
+// function to use planner
+function usePlanner() {
+
+    // WHEN I click the save button for that time block
+
+    // THEN the text for that event is saved in local storage, if there is anything scheduled
+
 }
 
-checkTime();
+/**
+ * CALL FUNCTIONS
+ */
 
-});
+timeBlockColor();
+usePlanner();
+
+
+
