@@ -67,12 +67,11 @@ function usePlanner() {
         var currHour = $(this).text();
         var currPlan = localStorage.getItem(currHour);
 
-        console.log(this);
-        console.log(currHour);
-        console.log(currPlan);
+        // console.log(this);
+        // console.log(currHour);
 
         if(currPlan !== null) {
-            $(this).children(".plan").val(currPlan);
+            $(this).siblings(".plan").val(currPlan);
         }
     });
 }
