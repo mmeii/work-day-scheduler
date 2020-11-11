@@ -20,15 +20,6 @@
  * DEFINE VARIABLES
  */
 
-var nine = $("#9");
-var ten = $("#10");
-var eleven = $("#11");
-var twelve = $("#12");
-var one = $("#13");
-var two = $("#14");
-var three = $("#15");
-var four = $("#16");
-var five = $("#17");
 var saveBtn = $(".saveBtn");
 
 /**
@@ -42,11 +33,13 @@ $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 function timeBlockColor() {
     var hour = moment().hours();
 
-    $(".time-block").each(function () {
+    $(".time-block").each(function() {
         var currHour = parseInt($(this).attr("id"));
 
+        // console.log(this); //each time-block
+
         if (currHour > hour) {
-            $(this).addClass("future")
+            $(this).addClass("future");
         } else if (currHour === hour) {
             $(this).addClass("present");
         } else {
@@ -55,13 +48,23 @@ function timeBlockColor() {
     })
 };
 
-// function to use planner
+// WHEN I click the save button for that time block
+saveBtn.on("click", function() {
+
+    // console.log(this); //save button
+
+    var time = $(this).siblings(".hour").text();
+    var plan = $(this).siblings(".plan").val();
+
+    // THEN the text for that event is saved in local storage
+    localStorage.setItem(time, plan);
+});
+
+// WHEN I refresh the page
+// THEN the saved events persist
 function usePlanner() {
 
-    // WHEN I click the save button for that time block
-
-    // THEN the text for that event is saved in local storage, if there is anything scheduled
-
+    });
 }
 
 /**
