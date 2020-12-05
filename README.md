@@ -8,7 +8,7 @@ This is a simple work day calendar application that allows a user to save events
 
 ## Functionality
 * When the planner is openned, the current day is displayed at the top of the calendar
-* When scrolled down, the user is presented with time blocks for standard business hours
+* When scrolled down, the user is presented with time blocks for standard business hours (from 9AM to 5PM)
 * When the user views the time blocks for that day, each time block is color-coded to indicate whether it is in the past, present, or future
   * ![#F2EDDC](https://via.placeholder.com/15/F2EDDC/000000?text=+) `Past` 
   * ![#D96A29](https://via.placeholder.com/15/D96A29/000000?text=+) `Present`
