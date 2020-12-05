@@ -28,8 +28,8 @@ This is a simple work day calendar application that allows a user to save events
 ![Day Planner Demo](Assets/day-planner-demo.gif)
 
 ## Websites
-* Github: https://github.com/mmeii/5-day-planner
-* Deployed: https://mmeii.github.io/5-day-planner/
+* Github: https://github.com/mmeii/day-planner
+* Deployed: https://mmeii.github.io/day-planner/
 
 ## License
 MIT
