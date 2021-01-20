@@ -1,4 +1,4 @@
-# Day Planner
+# Work Day Scheduler
 This is a simple work day calendar application that allows a user to save events for each hour of the day by using the starter code provided.
 
 ## Installation
@@ -7,8 +7,8 @@ This is a simple work day calendar application that allows a user to save events
 3. Use a text editor to view all coding, Visual Studio Coding is recommended.
 
 ## Websites
-* Github: https://github.com/mmeii/5-day-planner
-* Deployed: https://mmeii.github.io/5-day-planner/
+* Github: https://github.com/mmeii/work-day-scheduler
+* Deployed: https://mmeii.github.io/work-day-scheduler/
 
 ## Functionality
 * When the planner is openned, the current day is displayed at the top of the calendar
